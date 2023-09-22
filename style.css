@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+}
+.todo-head{
+    text-align: center;
+    margin-top:50px;
+    /* background-color: aqua; */
+}
+.todoinput{
+    margin-top:19px;
+    width:50%;
+    padding: 5px 5px 5px 5px;
+    border-radius:8px;
+}
+.addbutton{
+    width:5%;
+    padding:5px;
+    margin-left:18px;
+    border-radius: 7px;
+    background-color: rgb(173, 216, 230);
+    cursor: pointer;
+}
+.addbutton:hover{
+    color: #000;
+    background-color: var(--light-dark);
+}
+h2{
+     text-transform: uppercase;
+      text-align: center; 
+      padding:8px;
+      margin-top:50px;
+    
+}
+.todo{
+    width:50%;
+    margin: 120px 0 0 350px;
+    border:0 solid black;
+    box-shadow: 8px 8px 8px black;
+    padding: 12px 12px 80px 12px;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 25px; */
+    padding:0 8px 4px 50px;
+    user-select: none;
+    cursor: pointer;
+    text-align: left;
+    list-style: none;
+    position: relative;
+}
+ul li::before{
+content: '';
+position:absolute;
+height:30px;
+width:30px;
+border-radius: 80%;
+background-image: url(unchecked.jpg);
+background-size: cover;
+background-position: center;
+top:0px;
+left:5px;
+
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(stock-vector-green-check-mark-icon-in-a-circle-tick-symbol-in-green-color-vector-illustration-576516469.jpg);
+}
+.edittools{
+    display:inline-block;
+}
+.edittools button{
+    padding: 10px 8px;
+    border: 1px solid black;
+    border-radius:20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:90px;
+    height:40px;
+    font-size:22px;
+    line-height: 40px;
+    text-align:center;
+    cursor: pointer;
+   
+}
